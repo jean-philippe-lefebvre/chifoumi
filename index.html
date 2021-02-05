@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel='stylesheet' href='style.css'>
+
+		<link rel='preload' as='image' href='./img/rock.png'>
+		<link rel='preload' as='image' href='./img/paper.png'>
+		<link rel='preload' as='image' href='./img/scissors.png'>
+		<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+		<title>Chifoumi</title>
+	</head>
+	<body>
+		<div class='title'>
+
+			<div class='text rock'>Rock</div>	
+			<img class='arrow' src='./img/arrow.svg' />
+			<div class='text scissors'>Scissors</div>	
+
+			<div class='secondLigne'>
+				<img class='arrowTop' src='./img/arrowTop.svg' />
+				<div class='text paper'>Paper</div>	
+				<img class='arrowBottom' src='./img/arrowBottom.svg' />
+			</div>
+		</div>
+		<div class='spaceGame shadow'>
+			<div class='delimiter'></div>	
+			<div class='modaleWin'><div class='note'>Won</div><div class='btn'>Space: 🔄</div></div>
+			<div class='board'><div class='vs'>VS</div><div class='timer'>03</div></div>	
+
+			<div id='enemy' class='left'>
+				<img id='scissors' class="cursor" src='./img/scissors.png'/>
+				<img id='rock' class="cursor ennemy" src='./img/rock.png' style='display:none;'/>
+				<img id='paper' class="cursor ennemy" src='./img/paper.png' style='display:none;'/>
+			</div>
+
+		</div>
+		<div class='score shadow'>
+			<div class='user1'>0</div> 
+			<div class='separator'>:</div>
+			<div class='user2'>0</div>
+		</div>
+		<div id='myCursor' class='right'>
+			<img id='rock2' class="cursor" src='./img/rock.png'/>
+			<img id='paper2' class="cursor" src='./img/paper.png' style='display:none;'/>
+			<img id='scissors2' class="cursor" src='./img/scissors.png' style='display:none;'/>
+		</div>
+		<script type='module' src="app.js"></script>
+	</body>
+</html>
